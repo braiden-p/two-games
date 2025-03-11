@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabbed Content</title>
+    <link rel="stylesheet" href="games.css">
+</head>
+<body>
+    <div id="container">
+        <div class="tabs">
+            <h1>Hello!</h1>
+            <h1>Shall We Play a Game?</h1>
+            <ul>
+                <li class="trigger" data-target="#coinToss">Coin Toss</li>
+                <li class="trigger" data-target="#guessing">Guessing Game</li>
+            </ul>
+            <div id="coinToss" class="content">
+                <h2>Toss a Coin</h2>
+
+                <div id="flips">
+                    <button id="heads">Heads</button>
+                    <button id="tails">Tails</button>
+                </div>
+
+                <div id="coin">
+                    <img src="img/both.jpg" width="318" height="159" alt="heads and tails">
+                </div>
+            </div>
+            <div id="guessing" class="content">
+                <h2>Number Guessing Game</h2>
+
+                <p>
+                    I'm thinking of a number between 1 and 100.<br>
+                    Try to guess it in at most 10 attempts.<br>
+                    I'll tell you if your guess is higher or lower than the number.
+                </p>
+
+                <form>
+                    <label for="guess">Type a guess:</label>
+                    <input type="text" id="guess" name="guess">
+                </form>
+
+                <p id="userGuesses"></p>
+                <p id="result"><span></span></p>
+            </div>
+         </div>
+    </div>
+
+    <script src="tab.js"></script>
+    <script src="guess.js"></script>
+    <script src="coin.js"></script>
+</body>
+</html>

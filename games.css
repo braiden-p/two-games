@@ -1,0 +1,48 @@
+body {
+    margin: 20px auto auto;
+    font-size: x-large;
+    font-family: Tahoma, sans-serif;
+    text-align: center;
+}
+#container {
+    margin: 60px 40px 40px;
+}
+.tabs > ul {
+    padding: 0;
+}
+.tabs .trigger {
+    list-style-type: none;
+    padding: 10px;
+    background-color: lightgray;
+    margin: 4px;
+    border-radius: 6px;
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.tabs .trigger.active {
+    background-color: blue;
+    color: white;
+}
+h1, h2 {text-align: center; color: blue;}
+.tabs .content {
+    display: none;
+}
+.tabs .content.active {
+    display: block;
+}
+
+input {font-size: x-large}
+#result {
+    padding: 3px;
+    font-size: xx-large;
+}
+
+.tooBig {background-color: pink; color: blue;}
+.tooSmall {background-color: lightblue; color: blue;}
+.tooMany {background-color: red; color: black;}
+.justRight {background-color: lightgreen; color: green;}
+
+button {font-size: x-large;}
+
+img {margin: 40px auto auto; display: block;}
